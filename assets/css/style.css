@@ -1,0 +1,186 @@
+/* Base Styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #212529;
+}
+
+h1, h5 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 1rem;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  color: #6c757d;
+  opacity: 0.9;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Accordion */
+.accordion-button {
+  background-color: #e9ecef;
+  font-weight: 500;
+  color: #212529;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #dee2e6;
+}
+
+/* Cards */
+.card {
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #f1f3f5;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Covers in List */
+.list-group-item img {
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.list-group-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Badges */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.35em 0.6em;
+}
+
+.badge.bg-secondary {
+  background-color: #6c757d;
+}
+
+.badge.read {
+  background-color: #198754;
+}
+
+.badge.unread {
+  background-color: #dc3545;
+}
+
+.badge.reading {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+/* Buttons */
+.btn-sm {
+  margin-left: 4px;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-danger:hover,
+.btn-outline-secondary:hover,
+.btn-outline-success:hover,
+.btn-outline-info:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* Forms */
+input.form-control,
+select.form-select,
+textarea.form-control {
+  border-radius: 0.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+}
+
+/* Card content */
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* Pagination */
+.pagination .page-item .page-link {
+  border-radius: 0.4rem;
+  transition: background-color 0.2s ease;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+}
+
+/* ========================== */
+/* 🌙 DARK MODE SUPPORT       */
+/* ========================== */
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+}
+
+body.dark-mode .card,
+body.dark-mode .accordion-button,
+body.dark-mode .card-header,
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark-mode .list-group-item {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+  background-color: #333;
+}
+
+body.dark-mode .tagline {
+  color: #aaa;
+}
+
+body.dark-mode .card-text {
+  color: #bbb;
+}
+
+body.dark-mode .btn {
+  color: #f8f9fa;
+}
+
+body.dark-mode .page-link {
+  background-color: #333;
+  color: #ddd;
+}
+
+body.dark-mode .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+}
